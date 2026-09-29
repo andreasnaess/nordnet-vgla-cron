@@ -1,0 +1,16 @@
+{
+  "name": "nordnet-vgla-cron",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "devDependencies": {
+    "wrangler": "^4.143.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "workerd"]
+  }
+}
