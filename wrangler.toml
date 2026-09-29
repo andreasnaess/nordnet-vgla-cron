@@ -3,10 +3,10 @@ main = "src/index.js"
 compatibility_date = "2026-09-01"
 
 # Daily at 07:00 UTC. While VGLA is saveable you get one reminder per day,
-# so delete the worker (`npx wrangler delete`) once you've set up the saving.
+# so delete the worker (`pnpm wrangler delete`) once you've set up the saving.
 [triggers]
 crons = ["0 7 * * *"]
 
 # Secrets (not in this file):
-#   npx wrangler secret put TELEGRAM_BOT_TOKEN
-#   npx wrangler secret put TELEGRAM_CHAT_ID
+#   pnpm wrangler secret put TELEGRAM_BOT_TOKEN
+#   pnpm wrangler secret put TELEGRAM_CHAT_ID
