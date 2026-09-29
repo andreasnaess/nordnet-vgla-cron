@@ -2,6 +2,10 @@ name = "nordnet-vgla-cron"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 
+# Cron-only worker: no public *.workers.dev URL or preview URLs.
+workers_dev = false
+preview_urls = false
+
 # Daily at 07:00 UTC. While VGLA is saveable you get one reminder per day,
 # so delete the worker (`pnpm wrangler delete`) once you've set up the saving.
 [triggers]
