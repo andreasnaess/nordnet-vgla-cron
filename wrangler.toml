@@ -6,6 +6,10 @@ compatibility_date = "2026-09-01"
 workers_dev = false
 preview_urls = false
 
+# Store logs in Workers Logs (7-day retention) so past runs can be inspected.
+[observability]
+enabled = true
+
 # Daily at 07:00 UTC. While VGLA is saveable you get one reminder per day,
 # so delete the worker (`pnpm wrangler delete`) once you've set up the saving.
 [triggers]

@@ -25,7 +25,8 @@ pnpm run deploy
 ## Checking that it runs
 
 - Live logs: `pnpm run tail`
-- Past runs: Cloudflare dashboard → Workers & Pages → `nordnet-vgla-cron` → Settings → Trigger Events → View events
+- Past runs (time and success/failure): Cloudflare dashboard → Workers & Pages → `nordnet-vgla-cron` → Settings → Trigger Events → View events
+- Past logs, including the `VGLA is_monthly_saveable=...` line: Workers Logs for the worker in the dashboard (kept 7 days)
 
 ## Stopping it
 
